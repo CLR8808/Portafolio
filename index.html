@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Lizarraga - Desarrollador Frontend</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navegacion">
+        <div class="contenedor-navegacion">
+            <div class="logo-navegacion">
+                <span>Carlos</span>
+            </div>
+            <ul class="enlaces-navegacion">
+                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
+                <li><a href="#certificaciones" data-i18n="nav_certifications">Certificaciones</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+                <li class="controles-navegacion">
+                    <div class="contenedor-controles">
+                        <select id="selectorIdioma" class="selector-idioma">
+                            <option value="mx">🇲🇽 MX</option>
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="fr">🇫🇷 FR</option>
+                        </select>
+                        <button id="alternadorModoOscuro" class="boton-modo" aria-label="Cambiar modo oscuro/claro">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="alternador-navegacion" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="contenedor-hero">
+            <div class="contenido-hero">
+                <h1 class="titulo-hero">
+                    <span data-i18n="hero_title">Hola, soy</span> <span class="texto-degradado">Carlos Lizarraga</span>
+                </h1>
+                <p class="subtitulo-hero" data-i18n="hero_subtitle">
+                    Desarrollador Frontend especializado en crear experiencias web modernas y responsivas
+                </p>
+                <div class="botones-hero">
+                    <a href="#proyectos" class="boton boton-primario" data-i18n="hero_projects">
+                        Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="boton boton-secundario" data-i18n="hero_contact">
+                        Contactar
+                    </a>
+                </div>
+                <div class="social-hero">
+                    <a href="https://github.com/CLR8808" class="enlace-social">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlos-lizarraga08" class="enlace-social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="visual-hero">
+                <div class="contenedor-foto-hero">
+                    <img src="imagenes/yo_casual.png" alt="Carlos Lizarraga" class="foto-hero">
+                    <div class="fondo-foto-hero"></div>
+                </div>
+                <div class="contenedor-tarjetas-flotantes">
+                    <div class="tarjeta-flotante tarjeta-1">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tarjeta-flotante tarjeta-2">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="tarjeta-flotante tarjeta-3">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tarjeta-flotante tarjeta-4">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenedor">
+            <h2 class="titulo-seccion" data-i18n="projects_title">Proyectos Destacados</h2>
+            <div class="cuadricula-proyectos">
+                <!-- Proyecto 1 -->
+                <div class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <div class="marcador-imagen">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto" data-i18n="project1_title">APP de Mi Fiesta Figma</h3>
+                        <p class="descripcion-proyecto" data-i18n="project1_description">
+                            Diseño de una aplicasion de renta de locales para fiestas en Figma.
+                        </p>
+                        <div class="tecnologias-proyecto">
+                            <span class="etiqueta-tecnologia">Figma</span>
+                        </div>
+                        <div class="enlaces-proyecto">
+                            <a href="https://www.figma.com/proto/OAhyEUVGOR8uMvwYkFOo3C/MiFiesta?node-id=0-1&p=f&t=0tcwHQINiLEpxgrI-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=78%3A520&show-proto-sidebar=1" class="enlace-proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="demo">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <div class="marcador-imagen">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto" data-i18n="project2_title">Invitación web de bodas</h3>
+                        <p class="descripcion-proyecto" data-i18n="project2_description">
+                            Diseño de una invitación web interactiva y personalizada.
+                        </p>
+                        <div class="tecnologias-proyecto">
+                            <span class="etiqueta-tecnologia">HTML</span>
+                            <span class="etiqueta-tecnologia">CSS</span>
+                            <span class="etiqueta-tecnologia">JavaScript</span>
+                        </div>
+                        <div class="enlaces-proyecto">
+                            <a href="https://miboda1.netlify.app/" class="enlace-proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="demo">Demo</span>
+                            </a>
+                            <a href="https://github.com/CLR8808/pagina-invitacion-boda/tree/d6752ca0ad43a57a86b5fea262e65a48a6b18b57/invitacion" class="enlace-proyecto">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <div class="marcador-imagen">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto" data-i18n="project3_title">Página de recaudar fondos funcional</h3>
+                        <p class="descripcion-proyecto" data-i18n="project3_description">
+                            Plataforma para recaudar fondos con seguimiento de donaciones y estadísticas.
+                        </p>
+                        <div class="tecnologias-proyecto">
+                            <span class="etiqueta-tecnologia">HTML</span>
+                            <span class="etiqueta-tecnologia">CSS</span>
+                            <span class="etiqueta-tecnologia">JavaScript</span>
+                            <span class="etiqueta-tecnologia">SQL</span>
+                        </div>
+                        <div class="enlaces-proyecto">
+                            <a href="https://netdsfondos.netlify.app/" class="enlace-proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="demo">Demo</span>
+                            </a>
+                            <a href="https://github.com/CLR8808/pagina-fondos/tree/29020d6daf8fb91479f9379cd8156d7bc32e74f2/fondos" class="enlace-proyecto">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="tarjeta-proyecto">
+                    <div class="imagen-proyecto">
+                        <div class="marcador-imagen">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="contenido-proyecto">
+                        <h3 class="titulo-proyecto" data-i18n="project4_title">Control de Pagos</h3>
+                        <p class="descripcion-proyecto" data-i18n="project4_description">
+                            Aplicación para gestión de pagos con seguimiento de transacciones, reportes mediante una contraseña (contraseña admin2025 ).
+                        </p>
+                        <div class="tecnologias-proyecto">
+                            <span class="etiqueta-tecnologia">HTML</span>
+                            <span class="etiqueta-tecnologia">CSS</span>
+                            <span class="etiqueta-tecnologia">JavaScript</span>
+                            <span class="etiqueta-tecnologia">SQL</span>
+                        </div>
+                        <div class="enlaces-proyecto">
+                            <a href="https://controlpagos1.netlify.app/" class="enlace-proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="demo">Demo</span>
+                            </a>
+                            <a href="https://github.com/CLR8808/pagina-fondos/tree/29020d6daf8fb91479f9379cd8156d7bc32e74f2/fondos" class="enlace-proyecto">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="contenedor">
+            <div class="cuadricula-sobre-mi">
+                <div class="contenido-sobre-mi">
+                    <h2 class="titulo-seccion" data-i18n="about_title">Sobre Mí</h2>
+                    <div class="texto-sobre-mi">
+                        <p data-i18n="about_paragraph1">
+                            Soy <strong>Carlos Alfredo Lizarraga Sanchez</strong>, desarrollador frontend apasionado por crear experiencias web excepcionales. 
+                            Me especializo en transformar ideas en interfaces funcionales y atractivas.
+                        </p>
+                        <p data-i18n="about_paragraph2">
+                            Con experiencia en <strong>HTML, CSS, JavaScript</strong> y herramientas de diseño como <strong>Figma</strong>, 
+                            me enfoco en desarrollar soluciones que no solo sean visualmente atractivas, sino también 
+                            altamente funcionales y accesibles.
+                        </p>
+                        <p data-i18n="about_paragraph3">
+                            Siempre estoy aprendiendo nuevas tecnologías y mejorando mis habilidades para 
+                            mantenerme actualizado en el rápido mundo del desarrollo web.
+                        </p>
+                    </div>
+                    <div class="habilidades">
+                        <h3 data-i18n="skills_title">Tecnologías que utilizo:</h3>
+                        <div class="cuadricula-habilidades">
+                            <div class="item-habilidad">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="item-habilidad">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="item-habilidad">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="item-habilidad">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="item-habilidad">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="item-habilidad">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-sobre-mi">
+                    <div class="tarjeta-visual">
+                        <div class="encabezado-tarjeta">
+                            <div class="puntos-tarjeta">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="contenido-tarjeta">
+                            <pre><code>function desarrollador() {
+  return {
+    nombre: "Carlos Lizarraga",
+    rol: "Frontend Developer",
+    habilidades: [
+      "HTML", "CSS", "JavaScript",
+      "Responsive Design", "UI/UX"
+    ],
+    pasion: "Crear experiencias web increíbles"
+  };
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <section id="certificaciones" class="certificaciones">
+        <div class="contenedor">
+            <h2 class="titulo-seccion" data-i18n="certifications_title">Mis Certificaciones</h2>
+            <div class="cuadricula-certificaciones">
+ 
+                <div class="tarjeta-certificacion">
+                    <div class="imagen-certificacion">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="contenido-certificacion">
+                        <h3 class="titulo-certificacion" data-i18n="cert1_title">Programador (orientado a objetos)</h3>
+                        <p class="institucion-certificacion" data-i18n="cert1_institution">capacitateparaelempleo.org - 2025</p>
+                        <p class="descripcion-certificacion" data-i18n="cert1_description">
+                            Certificación en programación orientada a objetos, fundamentos de desarrollo de software y mejores prácticas de codificación.
+                        </p>
+                        <a href="https://capacitateparaelempleo.org/verifica/d8962f0e-77eb-4e36-87a4-1b858c210834/59c625e3-5470-4f74-906d-c4a68bdf6696" class="enlace-certificacion" data-i18n="view_certificate">
+                            Ver Certificado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenedor">
+            <h2 class="titulo-seccion" data-i18n="contact_title">Trabajemos Juntos</h2>
+            <div class="cuadricula-contacto">
+                <div class="info-contacto">
+                    <h3 data-i18n="contact_lets_talk">¡Hablemos!</h3>
+                    <p data-i18n="contact_description">
+                        Estoy siempre interesado en nuevos proyectos y oportunidades. 
+                        No dudes en contactarme si quieres trabajar juntos.
+                    </p>
+                    <div class="metodos-contacto">
+                        <div class="metodo-contacto">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong data-i18n="email">Email</strong>
+                                <span>lizarraga@engineer.com<br>car89992@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="metodo-contacto">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>/carlos-lizarraga</span>
+                            </div>
+                        </div>
+                        <div class="metodo-contacto">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>CLR8808</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulario-contacto">
+                    <form id="formularioContacto">
+                        <div class="grupo-formulario">
+                            <label for="nombre" data-i18n="name">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="email" data-i18n="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="mensaje" data-i18n="message">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="boton boton-primario">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="send_message">Enviar Mensaje</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="contenido-pie-pagina">
+                <div class="logo-pie-pagina">
+                    <span>Carlos</span>
+                </div>
+                
+                <p class="texto-pie-pagina" data-i18n="footer_text">
+                    Desarrollando el futuro, un proyecto a la vez.
+                </p>
+                
+                <div class="seccion-cv">
+                    <a href="archivos/CVV.pdf" class="boton boton-cv" download data-i18n="download_cv">
+                        <i class="fas fa-download"></i>
+                        Descargar CV
+                    </a>
+                </div>
+
+                <div class="social-pie-pagina">
+                    <a href="https://github.com/CLR8808" class="enlace-social" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlos-lizarraga08" class="enlace-social" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="inferior-pie-pagina">
+                <p>&copy; 2025 Carlos Alfredo Lizarraga Sanchez.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/idiomas.js"></script>
+    <script src="scripts/modo-oscuro.js"></script>
+    <script src="scripts/formulario-email.js"></script>
+</body>
+</html>
