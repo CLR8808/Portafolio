@@ -15,8 +15,8 @@ const traducciones = {
 
         // Proyectos
         "projects_title": "Proyectos Destacados",
-        "project1_title": "APP Mi Fiesta Figma",
-        "project1_description": "Diseño de una aplicación de renta de locales para fiestas en Figma.",
+        "project1_title": "ChatUpsin",
+        "project1_description": "Aplicación web de mensajería y chat interactivo en tiempo real (PWA).",
         "project2_title": "Invitación web de bodas",
         "project2_description": "Diseño de una invitación web interactiva y personalizada.",
         "project3_title": "Página para recaudar fondos",
@@ -70,8 +70,8 @@ const traducciones = {
 
         // Proyectos
         "projects_title": "Featured Projects",
-        "project1_title": "Mi Fiesta App Figma",
-        "project1_description": "Design of a party venue rental application in Figma.",
+        "project1_title": "ChatUpsin",
+        "project1_description": "Interactive real-time messaging and chat web application (PWA).",
         "project2_title": "Web Wedding Invitation",
         "project2_description": "Design of an interactive and personalized web invitation.",
         "project3_title": "Functional Fundraising Page",
@@ -125,8 +125,8 @@ const traducciones = {
 
         // Proyectos
         "projects_title": "Projets en Vedette",
-        "project1_title": "Application Mi Fiesta Figma",
-        "project1_description": "Conception d'une application de location de salles de fête dans Figma.",
+        "project1_title": "ChatUpsin",
+        "project1_description": "Application web de messagerie et de chat interactif en temps réel (PWA).",
         "project2_title": "Invitation de mariage web",
         "project2_description": "Conception d'une invitation web interactive et personnalisée.",
         "project3_title": "Page de collecte de fonds fonctionnelle",
